@@ -1,0 +1,39 @@
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+.body {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	transition: ease 1s;
+}
+
+.box {
+	max-width: 400px;
+	background: coral;
+	margin: 5px;
+	transition: ease 1s;
+}
+
+@media screen and (max-width: 1230px) {
+	.body {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media screen and (max-width: 830px) {
+	.body {
+		grid-template-columns: 1fr;
+	}
+.box {
+		max-width: 450px;
+	}
+}
+
+@media screen and (max-width: 460px) {
+	.box {
+		max-width: 350px;
+	}
+}
